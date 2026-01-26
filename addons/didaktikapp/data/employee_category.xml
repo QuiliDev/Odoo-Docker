@@ -1,0 +1,5 @@
+<odoo>
+    <record id="employee_category_comunicador" model="hr.employee.category">
+        <field name="name">Comunicador</field>
+    </record>
+</odoo>

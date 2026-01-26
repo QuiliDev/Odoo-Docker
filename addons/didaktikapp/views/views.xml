@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="didaktikapp.list">
+      <field name="name">didaktikapp list</field>
+      <field name="model">didaktikapp.didaktikapp</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="didaktikapp.action_window">
+      <field name="name">didaktikapp window</field>
+      <field name="res_model">didaktikapp.didaktikapp</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="didaktikapp.action_server">
+      <field name="name">didaktikapp server</field>
+      <field name="model_id" ref="model_didaktikapp_didaktikapp"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="didaktikapp" id="didaktikapp.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="didaktikapp.menu_1" parent="didaktikapp.menu_root"/>
+    <menuitem name="Menu 2" id="didaktikapp.menu_2" parent="didaktikapp.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="didaktikapp.menu_1_list" parent="didaktikapp.menu_1"
+              action="didaktikapp.action_window"/>
+    <menuitem name="Server to list" id="didaktikapp" parent="didaktikapp.menu_2"
+              action="didaktikapp.action_server"/>
+-->
+  </data>
+</odoo>

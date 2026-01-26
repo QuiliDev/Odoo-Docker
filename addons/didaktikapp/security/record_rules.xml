@@ -1,0 +1,10 @@
+<odoo>
+
+<record id="horas_rule_user" model="ir.rule">
+<field name="name">Horas propias</field>
+<field name="model_id" ref="model_didaktikapp_horas"/>
+<field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+<field name="groups" eval="[(4, ref('base.group_user'))]"/>
+</record>
+
+</odoo>
